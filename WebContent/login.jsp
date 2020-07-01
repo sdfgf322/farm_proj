@@ -66,14 +66,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<div class="login">
 		<h2><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">登录</font></font></h2>
-			<form>
+			<form action="${pageContext.request.contextPath}/user/login" name="actionForm" id="actionForm" method="post">
 			<div>
 				<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户名</font></font></span>
-				<input type="text"> 				
+				<input type="text" name="userId"> 				
 			</div>
 			<div>
 				<span class="word-in"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">密码</font></font></span>
-				<input type="password"> 
+				<input type="password" name="userPassword"> 
 			</div>
 				<a class="forgot" href="${pageContext.request.contextPath}/login.jsp#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">忘记密码了吗？</font></font></a>
 				<font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input type="submit" value="登录"></font></font> 
